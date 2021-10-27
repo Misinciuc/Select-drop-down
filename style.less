@@ -1,0 +1,156 @@
+.dropdown {
+  display: flex;
+  justify-content: center;
+}
+.language {
+  position: relative;
+  width: 27px;
+  height: 20px;
+
+  &-position {
+    margin-right: 50px;
+  }
+
+  &__list {
+    list-style: none;
+  }
+
+  &__item-init {
+    background-image: url(/img/language.png);
+    background-size: contain;
+    width: 27px;
+    height: 20px;
+    cursor: pointer;
+  }
+
+  &__link {
+    display: block;
+    width: 27px;
+    height: 20px;
+    background-size: contain;
+    cursor: pointer;
+  }
+
+  &__link-ru {
+    background-image: url(/img/language.png);
+  }
+  &__link-gb {
+    background-image: url(/img/lng-eng.png);
+  }
+
+  &__item {
+    &-hide {
+      display: none;
+    }
+  }
+  /* Arrow style */
+
+  &::before,
+  &::after {
+    content: "";
+    background-color: black;
+    position: absolute;
+    width: 10px;
+    height: 2px;
+    cursor: pointer;
+    top: 25px;
+    left: 75px;
+  }
+  &::before {
+    transform: rotate(-40deg);
+    left: 82px;
+    transition: all 0.2s ease-out;
+  }
+  &::after {
+    transform: rotate(40deg);
+    transition: all 0.2s ease-out;
+  }
+  /* Arrow animation up-down */
+
+  &.arrow_anim::before {
+    transform: rotate(40deg);
+    transition: all 0.2s ease-out;
+  }
+  &.arrow_anim::after {
+    transform: rotate(-40deg);
+    transition: all 0.2s ease-out;
+  }
+}
+
+.money {
+  position: relative;
+  width: 27px;
+  height: 20px;
+
+  &-position {
+    margin-right: 20px;
+  }
+
+  &__list {
+    list-style: none;
+  }
+
+  &__item-init {
+    background-image: url(/img/dolar.png);
+    background-repeat: no-repeat;
+    cursor: pointer;
+    width: 27px;
+    height: 20px;
+  }
+
+  &__link {
+    display: block;
+    width: 27px;
+    height: 20px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+  }
+
+  &__link-pound {
+    background-image: url(/img/pound.png);
+  }
+  &__link-ru {
+    background-image: url(/img/dolar.png);
+  }
+  &__link-euro {
+    background-image: url(/img/euro.png);
+  }
+
+  &__item {
+    &-hide {
+      display: none;
+    }
+  }
+  /* Arrow style */
+
+  &::before,
+  &::after {
+    content: "";
+    background-color: black;
+    position: absolute;
+    width: 10px;
+    height: 2px;
+    cursor: pointer;
+    top: 25px;
+    left: 61px;
+  }
+  &::before {
+    transform: rotate(-40deg);
+    left: 68px;
+    transition: all 0.2s ease-out;
+  }
+  &::after {
+    transform: rotate(40deg);
+    transition: all 0.2s ease-out;
+  }
+  /* Arrow animation up-down */
+
+  &.arrow_anim::before {
+    transform: rotate(40deg);
+    transition: all 0.2s ease-out;
+  }
+  &.arrow_anim::after {
+    transform: rotate(-40deg);
+    transition: all 0.2s ease-out;
+  }
+}

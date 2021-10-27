@@ -1,0 +1,135 @@
+.dropdown {
+  display: flex;
+  justify-content: center;
+}
+.language {
+  position: relative;
+  width: 27px;
+  height: 20px;
+  /* Arrow style */
+  /* Arrow animation up-down */
+}
+.language-position {
+  margin-right: 50px;
+}
+.language__list {
+  list-style: none;
+}
+.language__item-init {
+  background-image: url(/img/language.png);
+  background-size: contain;
+  width: 27px;
+  height: 20px;
+  cursor: pointer;
+}
+.language__link {
+  display: block;
+  width: 27px;
+  height: 20px;
+  background-size: contain;
+  cursor: pointer;
+}
+.language__link-ru {
+  background-image: url(/img/language.png);
+}
+.language__link-gb {
+  background-image: url(/img/lng-eng.png);
+}
+.language__item-hide {
+  display: none;
+}
+.language::before,
+.language::after {
+  content: "";
+  background-color: black;
+  position: absolute;
+  width: 10px;
+  height: 2px;
+  cursor: pointer;
+  top: 25px;
+  left: 75px;
+}
+.language::before {
+  transform: rotate(-40deg);
+  left: 82px;
+  transition: all 0.2s ease-out;
+}
+.language::after {
+  transform: rotate(40deg);
+  transition: all 0.2s ease-out;
+}
+.language.arrow_anim::before {
+  transform: rotate(40deg);
+  transition: all 0.2s ease-out;
+}
+.language.arrow_anim::after {
+  transform: rotate(-40deg);
+  transition: all 0.2s ease-out;
+}
+.money {
+  position: relative;
+  width: 27px;
+  height: 20px;
+  /* Arrow style */
+  /* Arrow animation up-down */
+}
+.money-position {
+  margin-right: 20px;
+}
+.money__list {
+  list-style: none;
+}
+.money__item-init {
+  background-image: url(/img/dolar.png);
+  background-repeat: no-repeat;
+  cursor: pointer;
+  width: 27px;
+  height: 20px;
+}
+.money__link {
+  display: block;
+  width: 27px;
+  height: 20px;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+.money__link-pound {
+  background-image: url(/img/pound.png);
+}
+.money__link-ru {
+  background-image: url(/img/dolar.png);
+}
+.money__link-euro {
+  background-image: url(/img/euro.png);
+}
+.money__item-hide {
+  display: none;
+}
+.money::before,
+.money::after {
+  content: "";
+  background-color: black;
+  position: absolute;
+  width: 10px;
+  height: 2px;
+  cursor: pointer;
+  top: 25px;
+  left: 61px;
+}
+.money::before {
+  transform: rotate(-40deg);
+  left: 68px;
+  transition: all 0.2s ease-out;
+}
+.money::after {
+  transform: rotate(40deg);
+  transition: all 0.2s ease-out;
+}
+.money.arrow_anim::before {
+  transform: rotate(40deg);
+  transition: all 0.2s ease-out;
+}
+.money.arrow_anim::after {
+  transform: rotate(-40deg);
+  transition: all 0.2s ease-out;
+}

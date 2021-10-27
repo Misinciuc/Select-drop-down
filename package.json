@@ -1,0 +1,19 @@
+{
+  "name": "drop-down",
+  "version": "1.0.0",
+  "description": "select drop-down",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Misinciuc/Select-drop-down.git"
+  },
+  "author": "Misinciuc Iurie",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Misinciuc/Select-drop-down/issues"
+  },
+  "homepage": "https://github.com/Misinciuc/Select-drop-down#readme"
+}
